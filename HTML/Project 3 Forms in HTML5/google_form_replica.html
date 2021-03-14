@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            text-align: center;
+            background-color: white;
+            width: 700px;
+            margin: auto;
+            border: 1xp solid #ccc;
+        }
+
+        .heading {
+            font-size: 32px;
+            padding-top: 56px;
+            padding-bottom: 32px;
+            font-weight: bolder;
+        }
+
+        .icons {
+            background-color: rgb(228, 175, 228);
+        }
+
+        .icons a img {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 32px;
+            padding-right: 32px;
+            height: 50px;
+            width: 50px;
+        }
+        
+        .input-wrapper {
+            padding-top: 80px;
+            padding-bottom: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-wrapper input{
+            font-size: 18px;
+            padding-bottom: 12px;
+            outline: none;
+            margin-bottom: 36px;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .buton input {
+            background-color: #0056ff;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body style="padding: 16px; margin: 0; background-color: #bdcdf1;">
+    <form>
+        <h1 class="heading">Register</h1>
+        <div class="icons">
+            <a href="http://google.com"><img src="Images/google-logo-png-open-2000.png" alt="Google"></a>
+            <a href="http://facebook.com"><img src="Images/facebook_circle-512.webp" alt="Facebook"></a>
+            <a href="http://linkedin.com"><img src="Images/linkedin_circle-512.webp" alt="Linkedin"></a>
+            <a href="http://github.com"><img src="Images/github-logo.svg" alt="Github"></a>
+        </div>
+        <div class="input-wrapper">
+            <input type="text" name="username" placeholder="Username">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="confirm-password" placeholder="Confirm Password">
+        </div>
+        <div class="buton">
+            <input type="submit" value="REGISTER">
+        </div>
+        <br>
+    </form>
+</body>
+
+</html>

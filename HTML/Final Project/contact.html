@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin: auto;
+            max-width: 44vw;
+            background-color: white;
+            text-align: center;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .contact input {
+            border: 0;
+            padding: 25px;
+            outline: none;
+            font-size: 18px;
+            color: rgb(63, 62, 62);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-bottom: 15px;
+            margin-bottom: 18px;
+            border-bottom: 1px solid #ccc;
+        }
+        .buton {
+            background-color: #0056ff;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-bottom: 12px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/home.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact Us</a>
+    </header>
+    <h2>Wanna come on my next trip? Contact Me.</h2>
+    <form method="POST">
+        <div class="contact">
+            <input type="text" name="fullname" placeholder="Full Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="number" name="mobile" placeholder="Contact Number" maxlength="10">
+        </div>
+        <input type="button" value="SUBMIT" class="buton">
+    </form>
+</body>
+
+</html>

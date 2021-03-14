@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #register-form {
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin: auto
+        }
+
+        .input-label {
+            margin: 0;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+
+        .input-item {
+            width: 100%;
+        }
+
+        #terms-check {
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightblue;">
+    <h1 style="text-align: center; margin-top: 55px;">Sign Up</h1>
+    <form id="register-form" method="POST">
+        <div>
+            <p class="input-label">Full Name:</p>
+            <input type="text" name="full-name" class="input-item" placeholder="Full Name" autofocus required>
+        </div>
+        <div>
+            <p class="input-label">D.O.B:</p>
+            <input type="date" name="age" class="input-item" min="18" max="45" required>
+        </div>
+        <div>
+            <p class="input-label">AGE:</p>
+            <input type="number" name="date" class="input-item" min="1995-01-01" max="2025-01-01" required>
+        </div>
+        <div>
+            <p class="input-label">Email:</p>
+            <input type="email" name="email" class="input-item" placeholder="Email" required>
+        </div>
+        <div>
+            <p class="input-label">Resume:</p>
+            <input type="file" name="file" class="input-item" required>
+        </div>
+        <div>
+            <p class="input-label">Password:</p>
+            <input type="password" name="password" class="input-item" required maxlength="8">
+        </div>
+        <div>
+            <p class="input-label">Confirm Password:</p>
+            <input type="password" name="confirm-password" class="input-item" required maxlength="8">
+        </div>
+        <div>
+            <p class="input-label">Gender:</p>
+            <input type="radio" name="male" value="male">Male</input>
+            <input type="radio" name="female" value="female">Female</input>
+            <input type="radio" name="other" value="other">Other</input>
+        </div>
+        <DIV>
+            <input list="technologies" id="terms-check" name="techology" placeholder="Technologies" required/>
+            <datalist id="technologies">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JAVASCRIPT"></option>
+                <option value="JQUERY"></option>
+                <option value="BOOTSTRAP"></option>
+                <option value="REACT/REDUX/MATERIAL-UI"></option>
+            </datalist>
+        </DIV>
+        <div>
+            <p class="input-label">Security Question: </p>
+            <select name="security-question" class="input-item">
+                <option value="pet-name">What was your first Pet Name ?</option>
+                <option value="first-job">What was your first Job ?</option>
+                <option value="nick-name">What was your Nick Name ?</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="answer" class="input-item" cols="30" rows="6" required></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="terms-conditions" value="accept" id="terms-check" required>
+            I agree to accept terms and conditions.
+        </div><br>
+        <div>
+            <input type="reset" value="Reset">
+        </div><br>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>
